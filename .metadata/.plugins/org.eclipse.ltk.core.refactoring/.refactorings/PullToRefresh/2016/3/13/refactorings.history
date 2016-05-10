@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;pullup_icon_big.png&apos; to &apos;drawable-xhdpi&apos;&#x0D;&#x0A;- Original project: &apos;PullToRefresh&apos;&#x0D;&#x0A;- Destination element: &apos;drawable-xhdpi&apos;&#x0D;&#x0A;- Original element: &apos;pullup_icon_big.png&apos;" description="Copy file" element1="res/drawable-xhdpi/pullup_icon_big.png" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1458786079109" target="/MyTest0/res/drawable-xhdpi" units="0" version="1.0"/>
+</session>

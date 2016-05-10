@@ -1,0 +1,20 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    tools:context="com.example.activity.Activity6" >
+    <com.example.widget.RefreshLayout 
+    	xmlns:android="http://schemas.android.com/apk/res/android"  
+    	xmlns:tools="http://schemas.android.com/tools"  
+    	android:id="@+id/swipe_refresh_widget"  
+    	android:layout_width="match_parent"  
+    	android:layout_height="match_parent" > 
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recycler_view"	
+         />
+    </com.example.widget.RefreshLayout>  
+</RelativeLayout>

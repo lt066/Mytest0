@@ -1,0 +1,27 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.activity.Activity2" >
+
+
+    <com.example.widget.LoopViewPager
+        android:layout_width="match_parent"
+        android:layout_height="300px"
+        android:id="@+id/viewpaper" />
+	<LinearLayout 
+	    android:layout_width="wrap_content"
+	    android:layout_height="14px"
+	    android:layout_alignBottom="@+id/viewpaper"
+	    android:layout_alignRight="@+id/viewpaper"
+	    android:layout_marginRight="20px"
+	    android:layout_marginBottom="20px"
+	    android:id="@+id/imgs"
+	    android:orientation="horizontal"/>
+	<EditText 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_below="@+id/viewpaper"
+	    android:id="@+id/edit2"/>
+
+</RelativeLayout>

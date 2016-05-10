@@ -1,0 +1,19 @@
+package com.example.object;
+
+import android.util.Log;
+
+public interface JavaScriptInterface1 {
+	
+	
+	//------android 代码示例------
+    public void callFromJSBasicDataType(int x,float y,char c,boolean result);
+//    {
+//           String str ="-"+(x+1)+"-"+(y+1)+"-"+c+"-"+result;
+//           System.out.print(str);
+//           Log.d("测试",str);
+//       }
+
+    public void callAndroidMethod(){
+          Log.d("测试","回调函数");
+       }
+}

@@ -1,0 +1,9 @@
+目录说明：
+	appcompat_v7：客户端官方兼容包，主要用于ActionBar的兼容
+	umeng       ：友盟开发类库，包括友盟推送，统计，分享及更新 // 不再使用
+	PushToRefreshLibs：下拉刷新控件库
+	gesture-imageview：GestureImageView,GestureImageViewPager控件类库(相册库)
+        volley：网络请求框架
+	values：分辨率适配xml文件，效果图720标注版和1080标注版
+	ZXbar 二维码扫描
+1

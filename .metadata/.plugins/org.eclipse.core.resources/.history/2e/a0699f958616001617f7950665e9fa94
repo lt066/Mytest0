@@ -1,0 +1,83 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- toolbar（actionbar）颜色 
+        <item name="colorPrimary">#673AB7</item>
+        	状态栏颜色 
+        <item name="colorPrimaryDark">@color/blue</item>
+        -->
+        <item name="actionBarStyle">@style/ActionBarStyle</item>
+        <!-- ActionBar样式 -->
+        <item name="actionMenuTextAppearance">@style/ZHSSubTitleTextAppearance</item>
+        <!-- ActionBar弹出框的字体样式 -->
+        <item name="actionMenuTextColor">@android:color/white</item>
+        <!-- 右边菜单字体颜色 -->
+        <!-- <item name="android:windowBackground">@color/common_background</item> -->
+        <!-- 系统全局默认背景色，不只ActionBar，包括所有的控件的默认背景色 title_back_arrow-->
+        <item name="homeAsUpIndicator">@drawable/title_back_arrow</item>
+        <!-- 返回键按钮图标 -->
+        <item name="actionOverflowButtonStyle">@style/MyOverflowButton</item>
+        <!-- overFlow图标 -->
+        <item name="actionBarDivider">@null</item>
+        <!--  <item name="android:windowActionBarOverlay">true</item> --><!-- 兼容支持库 --> 
+        <item name="windowActionBarOverlay">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    
+   <style name="ThemeActivity" parent="AppBaseTheme" mce_bogus="1">  
+    	<item name="android:windowAnimationStyle">@style/AnimationActivity</item>
+    	<item name="windowActionBar">false</item>
+    	<item name="android:windowNoTitle">true</item>  
+	</style>      
+   <style name="AnimationActivity" parent="@android:style/Animation.Activity" mce_bogus="1">  
+    	<item name="android:activityOpenEnterAnimation">@anim/activity_enter</item>  
+    	<!--  <item name="android:activityOpenExitAnimation">@anim/activity_exit</item> -->
+    	<!-- <item name="android:activityCloseEnterAnimation">@anim/back_enter</item>-->
+   	 	<item name="android:activityCloseExitAnimation">@anim/back_exit</item>  
+</style>  
+    <style name="ActionBarStyle" parent="@style/Widget.AppCompat.ActionBar">
+        <!-- ActionBar背景色 -->
+        <item name="background">@color/common_title_background</item>
+        <!-- 返回键旁边的标题字体样式 -->
+        <item name="titleTextStyle">@style/ZHSTitleTextStyle</item>
+        <item name="displayOptions">homeAsUp|showTitle</item>
+        <item name="elevation">2dp</item>
+    </style>
+    
+    <!-- ActionBar的菜单字体 -->
+    <style name="ZHSSubTitleTextAppearance">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <!-- ActionBar的title字体 -->
+    <style name="ZHSTitleTextStyle" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <!-- 启动页的style -->
+    <style name="style_indexfullscreen" parent="@style/Theme.AppCompat">
+        <item name="windowActionBar">false</item>
+        <!-- Remove system title bars; we will add the action bar ourselves. -->
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <!-- overflow的图标 -->
+    <style name="MyOverflowButton" parent="@style/Widget.AppCompat.Light.ActionButton.Overflow">
+        <item name="android:src">@drawable/list_icon</item>
+    </style>
+    <!-- 加入 右滑 返回上一页 动作 -->
+</resources>

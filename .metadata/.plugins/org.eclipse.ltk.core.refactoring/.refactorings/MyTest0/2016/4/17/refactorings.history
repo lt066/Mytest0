@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;R.java&apos; to &apos;Jpush_test/gen/com.example.jpush_test&apos;&#x0D;&#x0A;- Original project: &apos;MyTest0&apos;&#x0D;&#x0A;- Destination element: &apos;Jpush_test/gen/com.example.jpush_test&apos;&#x0D;&#x0A;- Original element: &apos;com.example.mytest0.R.java&apos;" description="Copy compilation unit" destination="=Jpush_test/gen&lt;com.example.jpush_test" element1="/gen&lt;com.example.mytest0{R.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1461304002826" units="1" version="1.0"/>
+</session>

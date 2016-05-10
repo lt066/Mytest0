@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="menu_overflow_btn" type="id"/>
+    <item name="menu_home" type="id"/>
+    <item name="menu_new" type="id"/>
+    <item name="menu_yzcm" type="id"/>
+    <item name="menu_personal" type="id"/>
+    
+    <!-- com.zhs.imageLoaders.ImageDisPlayer.java中用到 -->
+    <item name="image_container_tag" type="id"/>
+    <item name="image_url_tag" type="id"/>
+    
+    <!-- ImageLoader中， -->
+     <item name="image_container" type="id">false</item>
+     
+     <item name="report" type="id">false</item>
+    
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#673AB7"
+        android:id="@+id/toolbar">
+   
+
+    	<TextView
+       		android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_gravity="center"
+        	android:id="@+id/toolbar_title"
+        	android:maxHeight="?attr/actionBarSize"
+        	android:text="标题"
+        	android:textSize="@dimen/_42px"
+        	android:textColor="@color/white" />
+     </android.support.v7.widget.Toolbar>
+
+</RelativeLayout>

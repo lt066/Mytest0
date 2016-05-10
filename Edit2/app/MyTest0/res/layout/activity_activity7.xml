@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/action_name"/>
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/category_name"/>
+    
+    <Button android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10px"
+        android:id="@+id/openService"
+        android:text="打开service"/>
+    <Button android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10px"
+        android:id="@+id/bindService"
+        android:text="绑定service"/>
+    <Button android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10px"
+        android:id="@+id/unBindService"
+        android:text="解绑service"/>
+    <Button android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10px"
+        android:id="@+id/destrService"
+        android:text="摧毁service"/>
+    <Button android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10px"
+        android:id="@+id/sendBroad"
+        android:text="发送广播"/>
+     
+        
+
+</LinearLayout>

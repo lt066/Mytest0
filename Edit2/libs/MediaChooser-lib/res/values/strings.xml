@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MediaChooser</string>
+    <string name="image"> 选择图片 </string>
+    <string name="video"> 选择视频 </string>
+    <string name="images_tab"> 已选图片 </string>
+    <string name="videos_tab"> 已选视频 </string>
+    <string name="max_limit_reach_error"> 最多只能选择10张图片 </string>
+    <string name="max_limit_file"> 最大限制 </string>
+    <string name="please_wait_text"> 请稍后...</string>
+    <string name="refreshing"> 正在刷新</string>
+    <string name="file_size_exeeded"> 图片尺寸超过要求 </string>
+    <string name="selected_file_size">  Selected media size is : </string>
+    <string name="mb"> MB</string>
+    <string name="plaese_select_file"> 请选择图片</string>
+    <string name="file"> 文件 </string>
+    <string name="files"> 文件 </string>
+    <string name="no_media_file_available"> 没有媒体信息</string>
+
+</resources>

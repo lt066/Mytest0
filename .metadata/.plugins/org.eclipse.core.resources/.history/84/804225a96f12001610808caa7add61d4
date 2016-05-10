@@ -1,0 +1,132 @@
+package com.example.activity;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.UnsupportedEncodingException;
+import java.net.Socket;
+
+import com.example.mytest0.BaseActivity;
+import com.example.mytest0.R;
+import android.annotation.SuppressLint;
+import android.content.Context;
+import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
+import android.util.Log;
+import android.widget.TextView;
+
+public class SocketActivity extends BaseActivity{
+	private TextView accept_text;
+	private Handler mHandler;
+	public boolean isConne=true;
+	
+	private Thread mThread;
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		// TODO Auto-generated method stub
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.socketactivity);
+		initView();
+		
+		Runnable runnable = new Runnable() {
+			
+			@Override
+			public void run() {
+				// TODO Auto-generated method stub
+//				while(true)
+//				{
+					initData();
+//				}
+			}
+		};
+		mHandler=new Handler(){
+			public void handleMessage(android.os.Message msg) {
+				accept_text.setText(msg.obj.toString());
+			};
+		};
+		mThread=new Thread(runnable);
+		mThread.start();
+		
+	}
+	
+	private void initView()
+	{
+		accept_text=(TextView) findViewById(R.id.acceptText);
+		
+	}
+	
+	private void initData()
+	{
+		try {
+			Socket socket = new Socket("192.168.61.180", 30000);
+			BufferedReader br = new BufferedReader(new InputStreamReader(socket.getInputStream(),"GBK"));
+			String line = null;
+			while ((line =br.readLine())!=null) {
+				Message message = new Message();
+				message.obj=line;
+				mHandler.sendMessage(message);
+				
+			}
+			
+//			br.close();
+//			socket.close();
+		} catch (IOException e) {
+			// TODO: handle exception
+		}
+	}
+
+	@Override
+	protected Context getActivityContext() {
+		// TODO Auto-generated method stub
+		return this;
+	}
+	
+	@SuppressLint("NewApi")
+	@Override
+	protected void onDestroy() {
+		// TODO Auto-generated method stub
+		super.onDestroy();
+		isConne=false;
+		finishAndRemoveTask();
+	}
+
+	class SocketRunnable implements Runnable
+	{
+		private Socket s;
+		private BufferedReader br;
+
+		public SocketRunnable(Socket socket) {
+			// TODO Auto-generated constructor stub
+			s=socket;
+//			Socket socket = new Socket("192.168.61.180", 30000);
+			try {
+				br = new BufferedReader(new InputStreamReader(s.getInputStream(),"GBK"));
+			} catch (UnsupportedEncodingException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+		
+		@Override
+		public void run() {
+			// TODO Auto-generated method stub
+			String line = null;
+			try {
+				while ((line =br.readLine())!=null) {
+					Message message = new Message();
+					message.obj=line;
+					mHandler.sendMessage(message);
+					
+				}
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+		
+	}
+}

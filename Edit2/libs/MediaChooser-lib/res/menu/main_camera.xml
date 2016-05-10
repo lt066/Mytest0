@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" >
+
+    <item
+        android:id="@+id/cameraImageViewFromMediaChooserHeaderBar"
+        android:icon="@drawable/selector_camera_button"
+        android:orderInCategory="1"
+        android:title="照相"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/doneImageViewFromMediaChooserHeaderView"
+        android:icon="@drawable/ic_selection_done_media_chooser"
+        android:orderInCategory="2"
+        android:title="确定"
+        app:showAsAction="always"/>
+
+</menu>

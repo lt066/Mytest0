@@ -1,0 +1,12 @@
+package com.example.object;
+
+public class JavaScriptInterface1 {
+	//------android ´úÂëÊ¾Àý------
+    public void callFromJSBasicDataType(int x,float y,char c,boolean result){
+           String str ="-"+(x+1)+"-"+(y+1)+"-"+c+"-"+result;
+       }
+
+    public void callAndroidMethod(){
+           AppUtils.showDialog();
+       }
+}
