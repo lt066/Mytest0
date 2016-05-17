@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 2 elements to &apos;libs&apos;&#x0D;&#x0A;- Original project: &apos;AMap_Android_API_2DMap_Demo_V2.8.1_Location_API_V2.2.0&apos;&#x0D;&#x0A;- Destination element: &apos;libs&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     AMap_Search_V3.2.1_20160308.jar&#x0D;&#x0A;     AMap_Location_V2.2.0_20151222.jar" description="Copy files" element1="libs/AMap_Search_V3.2.1_20160308.jar" element2="libs/AMap_Location_V2.2.0_20151222.jar" files="2" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1463131134509" target="/MyTest0/libs" units="0" version="1.0"/>
+</session>

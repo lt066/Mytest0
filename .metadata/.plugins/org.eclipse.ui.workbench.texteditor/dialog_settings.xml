@@ -2,20 +2,20 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="stopSelf" key="selection"/>
+		<item value="myListener" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
-			<item value="stopSelf"/>
-			<item value="mPullLabel"/>
-			<item value="pull_to_refresh_pull_label"/>
-			<item value="pull_to_refresh"/>
-			<item value="onDe"/>
-			<item value="onde"/>
-			<item value="com.example.jpushdemo"/>
-			<item value="cursor"/>
+			<item value="myListener"/>
+			<item value="MyPoiOverlay"/>
+			<item value="mPoiSearch"/>
+			<item value="handler"/>
+			<item value="locData"/>
+			<item value="requestLocation"/>
+			<item value="sensorEventListener"/>
+			<item value="sugAdapter"/>
 		</list>
 		<list key="replacehistory">
 			<item value="com.example.jpush_test"/>

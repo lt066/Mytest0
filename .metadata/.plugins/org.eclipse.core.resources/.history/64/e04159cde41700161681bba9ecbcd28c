@@ -1,0 +1,30 @@
+package com.example.activity;
+
+import android.annotation.SuppressLint;
+import android.content.Context;
+import android.os.Bundle;
+
+import com.example.mytest0.BaseActivity;
+
+public class SMSCode_Activity extends BaseActivity{
+	
+	@Override
+	@SuppressLint("NewApi")
+	protected void onCreate(Bundle savedInstanceState) {
+		// TODO Auto-generated method stub
+		super.onCreate(savedInstanceState);
+	}
+
+	@Override
+	protected Context getActivityContext() {
+		// TODO Auto-generated method stub
+		return this;
+	}
+
+	@Override
+	protected String getActivityName() {
+		// TODO Auto-generated method stub
+		return "发送短信验证码";
+	}
+
+}

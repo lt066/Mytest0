@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete element from project &apos;MyTest0&apos;&#x0D;&#x0A;- Original project: &apos;MyTest0&apos;&#x0D;&#x0A;- Original element: &apos;AMap2DMap_2.8.1_AMapLocation_2.4.1_20160425.jar&apos;" description="Delete element" element1="libs/AMap2DMap_2.8.1_AMapLocation_2.4.1_20160425.jar" elements="0" flags="589830" id="org.eclipse.jdt.ui.delete" resources="1" stamp="1463447782868" subPackages="false" version="1.0"/>
+</session>

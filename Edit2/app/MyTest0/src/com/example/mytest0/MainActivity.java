@@ -11,9 +11,14 @@ import com.example.activity.Activity5;
 import com.example.activity.Activity6;
 import com.example.activity.DictResolverActivity;
 import com.example.activity.FileUseTest;
+import com.example.activity.GaodeMap_activity;
+import com.example.activity.Map_Activity;
+import com.example.activity.SMSCode_Activity;
 import com.example.activity.SendSms;
 import com.example.activity.SocketActivity;
 import com.example.activity.SurfaceViewTest;
+import com.example.interfaces.Login_interface;
+import com.example.widget.LoginDialog;
 
 import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
@@ -31,7 +36,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.TextView;
 
-public class MainActivity extends BaseActivity implements OnClickListener {
+public class MainActivity extends BaseActivity implements OnClickListener, Login_interface {
 	
 	private final static String ACTIVITY7_ACTION="com.example.intent.action.activity7";
 	private TextView text;
@@ -62,6 +67,10 @@ public class MainActivity extends BaseActivity implements OnClickListener {
 		findViewById(R.id.button10).setOnClickListener(this);
 		findViewById(R.id.button11).setOnClickListener(this);
 		findViewById(R.id.button12).setOnClickListener(this);
+		findViewById(R.id.button13).setOnClickListener(this);
+		findViewById(R.id.button14).setOnClickListener(this);
+		findViewById(R.id.button15).setOnClickListener(this);
+		findViewById(R.id.button16).setOnClickListener(this);
 		text=(TextView) findViewById(R.id.text);
 	}
 
@@ -84,7 +93,8 @@ public class MainActivity extends BaseActivity implements OnClickListener {
 		return super.onOptionsItemSelected(item);
 	}
 
-	@Override
+	@TargetApi(Build.VERSION_CODES.HONEYCOMB) 
+	@SuppressLint("NewApi") @Override
 	public void onClick(View v) {
 		// TODO Auto-generated method stub
 		int id =v.getId();
@@ -147,6 +157,20 @@ public class MainActivity extends BaseActivity implements OnClickListener {
 		case R.id.button12:
 			startActivity(new Intent(MainActivity.this,SocketActivity.class));
 			break;
+		case R.id.button13:
+			LoginDialog loginDialog=new LoginDialog(this);
+			loginDialog.show(getFragmentManager(), "登录窗口");
+			loginDialog.setLoginInterface(this);
+			break;
+		case R.id.button14:
+			startActivity(new Intent(MainActivity.this,SMSCode_Activity.class));
+			break;
+		case R.id.button15:
+			startActivity(new Intent(MainActivity.this,Map_Activity.class));
+			break;
+		case R.id.button16:
+			startActivity(new Intent(MainActivity.this,GaodeMap_activity.class));
+			break;
 		default:
 			break;
 		}
@@ -190,5 +214,11 @@ public class MainActivity extends BaseActivity implements OnClickListener {
 	protected String getActivityName() {
 		// TODO Auto-generated method stub
 		return "主界面";
+	}
+
+	@Override
+	public void runLogin() {
+		// TODO Auto-generated method stub
+		showToastMsgShort("登录");
 	}
 }
