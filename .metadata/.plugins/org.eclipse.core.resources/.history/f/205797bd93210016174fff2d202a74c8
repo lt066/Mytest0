@@ -1,0 +1,10 @@
+eclipse.preferences.version=1
+encoding//src/com/example/activity/SocketActivity.java=UTF-8
+encoding//src/com/example/imageloader/ImageCacheManager.java=UTF-8
+encoding//src/com/example/imageloader/ImageCacheUtil.java=UTF-8
+encoding//src/com/example/imageloader/MD5Utils.java=UTF-16
+encoding//src/com/example/imageloader/VolleyController.java=UTF-8
+encoding//src/com/example/interfaces/Pullable.java=UTF-8
+encoding//src/com/example/model/Focus.java=UTF-8
+encoding//src/com/example/widget/OverlayManager.java=UTF-8
+encoding//src/com/example/widget/PullToRefreshLayout.java=UTF-8

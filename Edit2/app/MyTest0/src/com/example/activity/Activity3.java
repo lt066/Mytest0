@@ -46,6 +46,7 @@ public class Activity3 extends BaseActivity implements OnTouchListener {
 		mPullToRefresh.setOnRefreshListener(new com.jingchen.pulltorefreshs.PullToRefreshBase.OnRefreshListener2<GridView>() {
 
 
+			@SuppressLint("HandlerLeak") 
 			@Override
 			public void onPullDownToRefresh(PullToRefreshBase<GridView> refreshView) {
 				// TODO Auto-generated method stub
@@ -107,7 +108,7 @@ public class Activity3 extends BaseActivity implements OnTouchListener {
 	public void onWindowFocusChanged(boolean hasFocus) {
 		// TODO Auto-generated method stub
 		super.onWindowFocusChanged(hasFocus);
-		if(mPullToRefresh!=null && isautoRefresh)
+		if(mPullToRefresh!=null && isautoRefresh && hasFocus)
 		{
 			isautoRefresh=false;
 			mPullToRefresh.autoRefresh();
