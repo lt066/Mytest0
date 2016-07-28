@@ -14,6 +14,7 @@ import com.example.activity.FileUseTest;
 import com.example.activity.GalleryActivity;
 import com.example.activity.GaodeMap_activity;
 import com.example.activity.Map_Activity;
+import com.example.activity.MyRefreshActivity;
 import com.example.activity.SMSCode_Activity;
 import com.example.activity.SendSms;
 import com.example.activity.SocketActivity;
@@ -73,6 +74,7 @@ public class MainActivity extends BaseActivity implements OnClickListener, Login
 		findViewById(R.id.button15).setOnClickListener(this);
 		findViewById(R.id.button16).setOnClickListener(this);
 		findViewById(R.id.button17).setOnClickListener(this);
+		findViewById(R.id.button18).setOnClickListener(this);
 		text=(TextView) findViewById(R.id.text);
 	}
 
@@ -175,6 +177,9 @@ public class MainActivity extends BaseActivity implements OnClickListener, Login
 			break;
 		case R.id.button17:
 			startActivity(new Intent(MainActivity.this,GalleryActivity.class));
+			break;
+		case R.id.button18:
+			startActivity(new Intent(MainActivity.this,MyRefreshActivity.class));
 			break;
 		default:
 			break;

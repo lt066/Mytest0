@@ -5,6 +5,7 @@ import java.util.List;
 import com.example.mytest0.BaseActivity;
 import com.example.mytest0.R;
 import com.example.services.FirstService;
+import com.example.widget.SelectPopup;
 
 import android.app.ActivityManager;
 import android.app.Service;
@@ -14,6 +15,7 @@ import android.content.Intent;
 import android.content.ServiceConnection;
 import android.os.Bundle;
 import android.os.IBinder;
+import android.view.Gravity;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.animation.Animation;
@@ -24,6 +26,7 @@ public class Activity7 extends BaseActivity implements OnClickListener{
 	
 	private ServiceConnection conn;
 	private FirstService firstService;
+	SelectPopup selectPopup ;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -42,11 +45,13 @@ public class Activity7 extends BaseActivity implements OnClickListener{
 		TextView category_name = (TextView) findViewById(R.id.category_name);
 		category_name.setText(getIntent().getCategories()+"");
 		
+		selectPopup = new SelectPopup(getActivityContext());
 		findViewById(R.id.openService).setOnClickListener(this);
 		findViewById(R.id.bindService).setOnClickListener(this);
 		findViewById(R.id.unBindService).setOnClickListener(this);
 		findViewById(R.id.destrService).setOnClickListener(this);
 		findViewById(R.id.sendBroad).setOnClickListener(this);
+		findViewById(R.id.openpop).setOnClickListener(this);
 	}
 	
 	private void initData()
@@ -100,6 +105,11 @@ public class Activity7 extends BaseActivity implements OnClickListener{
 			Intent intentBroad=new Intent();
 			intentBroad.setAction("com.example.mytest0.broadcastreceiver.MyReceiver");
 			sendBroadcast(intentBroad);
+			break;
+		case R.id.openpop:
+			
+			selectPopup.showAtLocation(getWindow().getDecorView(), Gravity.CENTER, 0, 0);
+			showToastMsgShort("R.id.openpop");
 			break;
 			
 

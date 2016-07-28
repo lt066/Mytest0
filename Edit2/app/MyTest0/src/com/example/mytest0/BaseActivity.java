@@ -52,7 +52,7 @@ import android.widget.Toast;
 			getSupportActionBar().setDisplayShowHomeEnabled(true);
 			getSupportActionBar().setHomeButtonEnabled(true);
 			getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-			getSupportActionBar().setHomeAsUpIndicator(R.drawable.title_back_arrow);
+//			getSupportActionBar().setHomeAsUpIndicator(R.drawable.title_back_arrow);
 		}
 	}
 	public void onCreateCustomToolBar(Toolbar toolbar){

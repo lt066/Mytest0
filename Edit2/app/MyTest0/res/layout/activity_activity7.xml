@@ -35,6 +35,19 @@
         android:layout_marginTop="@dimen/_10px"
         android:id="@+id/sendBroad"
         android:text="发送广播"/>
+    <Button android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10px"
+        android:id="@+id/openpop"
+        android:text="测试弹窗"/>
+    
+    <CheckBox 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="测试"
+        style="@style/CustomCheckboxTheme"
+        />
      
         
 

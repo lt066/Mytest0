@@ -104,6 +104,11 @@
         android:layout_height="wrap_content"
         android:id="@+id/button17"
         android:text="打开Gallery" />
+      <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button18"
+        android:text="打开自定义view" />
     <TextView android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/text"/>

@@ -8,12 +8,12 @@ package com.jingchen.pulltorefresh;
 
 public final class R {
 	public static final class anim {
-		public static final int reverse_anim = 0x7f04000f;
-		public static final int rotating = 0x7f040010;
-		public static final int slide_in_from_bottom = 0x7f040011;
-		public static final int slide_in_from_top = 0x7f040012;
-		public static final int slide_out_to_bottom = 0x7f040013;
-		public static final int slide_out_to_top = 0x7f040014;
+		public static final int reverse_anim = 0x7f040010;
+		public static final int rotating = 0x7f040011;
+		public static final int slide_in_from_bottom = 0x7f040012;
+		public static final int slide_in_from_top = 0x7f040013;
+		public static final int slide_out_to_bottom = 0x7f040014;
+		public static final int slide_out_to_top = 0x7f040015;
 	}
 	public static final class attr {
 		public static final int pstsDividerColor = 0x7f010002;
@@ -70,59 +70,59 @@ public final class R {
 	}
 	public static final class drawable {
 		public static final int background_tab = 0x7f020033;
-		public static final int default_ptr_flip = 0x7f020038;
-		public static final int default_ptr_rotate = 0x7f020039;
-		public static final int h = 0x7f02003d;
-		public static final int i = 0x7f02003e;
-		public static final int ic_launcher = 0x7f020044;
-		public static final int indicator_arrow = 0x7f020052;
-		public static final int indicator_bg_bottom = 0x7f020053;
-		public static final int indicator_bg_top = 0x7f020054;
-		public static final int j = 0x7f020055;
-		public static final int k = 0x7f020056;
-		public static final int l = 0x7f020057;
-		public static final int load_failed = 0x7f020059;
-		public static final int load_succeed = 0x7f02005a;
-		public static final int loading = 0x7f02005b;
-		public static final int m = 0x7f020064;
-		public static final int pull_icon_big = 0x7f020076;
-		public static final int pullup_icon_big = 0x7f020077;
-		public static final int refresh_failed = 0x7f020078;
-		public static final int refresh_succeed = 0x7f020079;
-		public static final int refreshing = 0x7f02007a;
+		public static final int default_ptr_flip = 0x7f02003b;
+		public static final int default_ptr_rotate = 0x7f02003c;
+		public static final int h = 0x7f020040;
+		public static final int i = 0x7f020041;
+		public static final int ic_launcher = 0x7f020047;
+		public static final int indicator_arrow = 0x7f020055;
+		public static final int indicator_bg_bottom = 0x7f020056;
+		public static final int indicator_bg_top = 0x7f020057;
+		public static final int j = 0x7f020058;
+		public static final int k = 0x7f020059;
+		public static final int l = 0x7f02005a;
+		public static final int load_failed = 0x7f02005c;
+		public static final int load_succeed = 0x7f02005d;
+		public static final int loading = 0x7f02005e;
+		public static final int m = 0x7f020067;
+		public static final int pull_icon_big = 0x7f020079;
+		public static final int pullup_icon_big = 0x7f02007a;
+		public static final int refresh_failed = 0x7f02007b;
+		public static final int refresh_succeed = 0x7f02007c;
+		public static final int refreshing = 0x7f02007d;
 	}
 	public static final class id {
 		public static final int both = 0x7f0a0015;
-		public static final int content_view = 0x7f0a0066;
+		public static final int content_view = 0x7f0a0067;
 		public static final int disabled = 0x7f0a0016;
-		public static final int fl_inner = 0x7f0a00a6;
+		public static final int fl_inner = 0x7f0a00ad;
 		public static final int flip = 0x7f0a001c;
 		public static final int gridview = 0x7f0a0000;
-		public static final int head_view = 0x7f0a00ae;
-		public static final int imagesLayout = 0x7f0a0081;
-		public static final int loading_icon = 0x7f0a009b;
-		public static final int loadmore_view = 0x7f0a0099;
-		public static final int loadstate_iv = 0x7f0a009d;
-		public static final int loadstate_tv = 0x7f0a009c;
+		public static final int head_view = 0x7f0a00b5;
+		public static final int imagesLayout = 0x7f0a0088;
+		public static final int loading_icon = 0x7f0a00a2;
+		public static final int loadmore_view = 0x7f0a00a0;
+		public static final int loadstate_iv = 0x7f0a00a4;
+		public static final int loadstate_tv = 0x7f0a00a3;
 		public static final int manualOnly = 0x7f0a0017;
 		public static final int pullDownFromTop = 0x7f0a0018;
 		public static final int pullFromEnd = 0x7f0a0019;
 		public static final int pullFromStart = 0x7f0a001a;
 		public static final int pullUpFromBottom = 0x7f0a001b;
-		public static final int pull_icon = 0x7f0a00af;
-		public static final int pull_to_refresh_image = 0x7f0a00a7;
-		public static final int pull_to_refresh_progress = 0x7f0a00a8;
-		public static final int pull_to_refresh_sub_text = 0x7f0a00aa;
-		public static final int pull_to_refresh_text = 0x7f0a00a9;
-		public static final int pullup_icon = 0x7f0a009a;
+		public static final int pull_icon = 0x7f0a00b6;
+		public static final int pull_to_refresh_image = 0x7f0a00ae;
+		public static final int pull_to_refresh_progress = 0x7f0a00af;
+		public static final int pull_to_refresh_sub_text = 0x7f0a00b1;
+		public static final int pull_to_refresh_text = 0x7f0a00b0;
+		public static final int pullup_icon = 0x7f0a00a1;
 		public static final int recycler_view = 0x7f0a005e;
 		public static final int refresh_view = 0x7f0a0058;
-		public static final int refreshing_icon = 0x7f0a00b0;
+		public static final int refreshing_icon = 0x7f0a00b7;
 		public static final int rotate = 0x7f0a001d;
 		public static final int scrollview = 0x7f0a0002;
-		public static final int state_iv = 0x7f0a00b2;
-		public static final int state_tv = 0x7f0a00b1;
-		public static final int tv = 0x7f0a0098;
+		public static final int state_iv = 0x7f0a00b9;
+		public static final int state_tv = 0x7f0a00b8;
+		public static final int tv = 0x7f0a009f;
 		public static final int webview = 0x7f0a0001;
 	}
 	public static final class layout {
@@ -131,16 +131,16 @@ public final class R {
 		public static final int activity_imageview = 0x7f030023;
 		public static final int activity_listview = 0x7f030025;
 		public static final int activity_main = 0x7f030026;
-		public static final int activity_scrollview = 0x7f030028;
-		public static final int activity_textview = 0x7f030029;
-		public static final int activity_webview = 0x7f03002a;
-		public static final int list_item_layout = 0x7f03002f;
-		public static final int load_more = 0x7f030030;
-		public static final int pull_to_refresh_header_horizontal = 0x7f030034;
-		public static final int pull_to_refresh_header_vertical = 0x7f030035;
-		public static final int recycler_view_demo_layout = 0x7f030037;
-		public static final int refresh_head = 0x7f030039;
-		public static final int text_view = 0x7f03003f;
+		public static final int activity_scrollview = 0x7f030029;
+		public static final int activity_textview = 0x7f03002a;
+		public static final int activity_webview = 0x7f03002b;
+		public static final int list_item_layout = 0x7f030030;
+		public static final int load_more = 0x7f030031;
+		public static final int pull_to_refresh_header_horizontal = 0x7f030035;
+		public static final int pull_to_refresh_header_vertical = 0x7f030036;
+		public static final int recycler_view_demo_layout = 0x7f030038;
+		public static final int refresh_head = 0x7f03003a;
+		public static final int text_view = 0x7f030041;
 	}
 	public static final class string {
 		public static final int app_name = 0x7f070035;

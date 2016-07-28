@@ -19,10 +19,5 @@
 			<type>2</type>
 			<location>E:/LT/android-sdk-windows/sources/android-23</location>
 		</link>
-		<link>
-			<name>.link2</name>
-			<type>2</type>
-			<location>E:/LT/android-sdk-windows/sources/android-17</location>
-		</link>
 	</linkedResources>
 </projectDescription>
