@@ -38,9 +38,14 @@ public class MyAdapter extends BaseAdapter {
 	@SuppressLint("ViewHolder")
 	@Override
 	public View getView(int position, View convertView, ViewGroup parent) {
-		View view = LayoutInflater.from(context).inflate(R.layout.list_item_layout, null);
-		TextView tv = (TextView) view.findViewById(R.id.tv);
-		tv.setText(items.get(position));
+		View view =null;
+		if(position<=1){
+			view = LayoutInflater.from(context).inflate(R.layout.frist_item, null);
+		}else {
+			view = LayoutInflater.from(context).inflate(R.layout.main_section_item, null);
+		}
+//		TextView tv = (TextView) view.findViewById(R.id.tv);
+//		tv.setText(items.get(position));
 		return view;
 	}
 
