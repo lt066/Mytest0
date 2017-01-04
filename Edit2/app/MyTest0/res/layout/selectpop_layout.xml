@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    
+    <Spinner 
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_100px"
+        android:layout_marginTop="@dimen/_30px"
+        android:layout_marginLeft="@dimen/_30px"
+        android:layout_marginRight="@dimen/_30px"
+        android:spinnerStyle="@android:style/Widget.Spinner.DropDown"
+        android:spinnerMode="dialog"
+        android:id="@+id/spiner0"/>
+    <Spinner 
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_100px"
+        android:layout_marginTop="@dimen/_30px"
+        android:layout_marginLeft="@dimen/_30px"
+        android:layout_marginRight="@dimen/_30px"
+        android:spinnerStyle="@android:style/Widget.Spinner.DropDown"
+        android:spinnerMode="dialog"
+        android:id="@+id/spiner1"/>
+    <Spinner 
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_100px"
+        android:layout_marginTop="@dimen/_30px"
+        android:layout_marginLeft="@dimen/_30px"
+        android:layout_marginRight="@dimen/_30px"
+        android:spinnerStyle="@android:style/Widget.Spinner.DropDown"
+        android:spinnerMode="dialog"
+        android:id="@+id/spiner2"/>
+    <Spinner 
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_100px"
+        android:layout_marginTop="@dimen/_30px"
+        android:layout_marginLeft="@dimen/_30px"
+        android:layout_marginRight="@dimen/_30px"
+        android:spinnerStyle="@android:style/Widget.Spinner.DropDown"
+        android:spinnerMode="dialog"
+        android:id="@+id/spiner3"/>
+    
+
+</LinearLayout>
